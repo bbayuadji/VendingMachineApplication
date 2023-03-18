@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:layout_margin="20dp"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="300dp"
+        android:layout_height="600dp"
+        android:layout_gravity="top"
+        android:layout_margin="10dp"
+        android:background="@drawable/vending_machine_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llVMView"
+            android:layout_width="200dp"
+            android:layout_height="500dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vending_machine_view"
+            android:orientation="horizontal"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/llVMView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+
+                    android:id="@+id/llAqua">
+
+                    <ImageView
+                        android:id="@+id/iv_aqua"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="Aqua"
+                        android:background="@color/white"
+                        android:src="@drawable/aqua">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_aqua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        android:text="Aqua" />
+
+                    <TextView
+                        android:id="@+id/tv_harga_aqua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="Rp.100"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/llTehBotol">
+
+                    <ImageView
+                        android:id="@+id/iv_teh_botol"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="Teh Botol"
+                        android:background="@color/white"
+                        android:src="@drawable/teh_botol">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_teh_botol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        android:text="Teh Botol" />
+
+                    <TextView
+                        android:id="@+id/tv_harga_teh_botol"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        android:text="Rp.50" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/llPepsi">
+
+                    <ImageView
+                        android:id="@+id/iv_pepsi"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:contentDescription="Pepsi"
+                        android:background="@color/white"
+                        android:src="@drawable/pepsi">
+                    </ImageView>
+
+                    <TextView
+                        android:id="@+id/tv_pepsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        android:text="Pepsi" />
+
+                    <TextView
+                        android:id="@+id/tv_harga_pepsi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:background="@color/white"
+                        android:textColor="@color/grey"
+                        android:text="Rp.5" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llVMView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginStart="5dp"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/llSprite">
+
+                        <ImageView
+                            android:id="@+id/iv_sprite"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:contentDescription="Sprite"
+                            android:background="@color/white"
+                            android:src="@drawable/sprite">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_sprite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Sprite" />
+
+                        <TextView
+                            android:id="@+id/tv_harga_sprite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Rp.20" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/llFanta">
+
+                        <ImageView
+                            android:id="@+id/iv_fanta"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:contentDescription="Teh Botol"
+                            android:background="@color/white"
+                            android:src="@drawable/fanta">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_fanta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Fanta" />
+
+                        <TextView
+                            android:id="@+id/tv_harga_fanta"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Rp.10" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    app:cardCornerRadius="10dp"
+                    app:cardElevation="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:id="@+id/llCoke">
+
+                        <ImageView
+                            android:id="@+id/iv_coke"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:background="@color/white"
+                            android:src="@drawable/coke">
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/tv_coke"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Coke" />
+
+                        <TextView
+                            android:id="@+id/tv_harga_coke"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:background="@color/white"
+                            android:textColor="@color/grey"
+                            android:text="Rp.1" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/llVM"
+            android:layout_width="80dp"
+            android:layout_height="300dp"
+            android:background="@drawable/vending_machine_view"
+            android:gravity="center|top"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/llVMView"
+            app:layout_constraintTop_toTopOf="@id/llVMView">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvVM"
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:layout_marginTop="20dp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vending_machine_bt"
+            android:text="BAYAR"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/bt_bayar"
+
+            app:layout_constraintEnd_toEndOf="@id/llVM"
+            app:layout_constraintStart_toStartOf="@id/llVM"
+            app:layout_constraintTop_toBottomOf="@+id/llVM">
+        </Button>
+
+        <View
+            android:layout_width="200dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/vending_machine_output"
+            app:layout_constraintCircleRadius="30dp"
+
+            app:layout_constraintStart_toStartOf="@id/llVMView"
+            app:layout_constraintTop_toBottomOf="@id/llVMView" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
